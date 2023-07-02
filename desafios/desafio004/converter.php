@@ -20,7 +20,7 @@
                     $bid = $obj->USDBRL->bid;
                     
                     
-                    echo "Seus <strong>R$" . $_GET["dinheiro"] . "</strong> equivalem a <strong>US$" . $_GET["dinheiro"]*$bid. "</strong>";
+                    echo "Seus <strong>R$" . $_GET["dinheiro"] . "</strong> equivalem a <strong>US$" . number_format($_GET["dinheiro"]*$bid, 2). "</strong>";
 
                     echo '<p><strong>* Cotação usada R$'.$bid.'</strong> informada diretamente da API';
                 ?>
